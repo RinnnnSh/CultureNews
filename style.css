@@ -1,0 +1,453 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background-color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+@font-face {
+  font-family: Playfair Display;
+  src: url(fonts/PlayfairDisplay-Black.ttf);
+}
+@font-face {
+  font-family: Raleway;
+  src: url(fonts/Raleway-Regular.ttf);
+}
+
+
+li {
+  list-style-type: none;
+}
+ul {
+ padding: 0;
+ margin-left: 0px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+hr {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+
+/* ---------------- вспомогательные рамки -----------------
+.header-nav {
+  border: 1px solid gray;
+}
+.header-nav h1 {
+  border: 1px solid black;
+}
+.header-nav-list {
+  border: 1px solid black;
+}
+.header-nav-item {
+  border: 1px solid red;
+}
+.main-news {
+  border: 1px solid red;
+}
+.main-news div {
+  border: 1px solid white;
+}
+.main-news img {
+  border: 1px solid red;
+}
+.main-news h2 {
+border: 1px solid white;
+}
+.main-news p {
+border: 1px solid white;
+}
+.reviews h2 {
+  border: 1px solid blue;
+}
+.reviews-list {
+  border: 1px solid black;
+}
+.reviews-item {
+  border: 1px solid blue;
+}
+.promo {
+  border: 1px solid red;
+}
+.promo h2 {
+  border: 1px solid blue;
+}
+.promo-item h3 {
+border: 1px solid green;
+}
+.promo-item p {
+  border: 1px solid black;
+}
+.promo a {
+  border: 1px solid black;
+}
+footer {
+  border: 1px solid blue;
+}
+.footer-nav {
+  border: 1px solid gray;
+}
+.footer-nav h2 {
+  border: 1px solid black;
+}
+.footer-nav-list {
+  border: 1px solid black;
+}
+.footer-nav-item {
+  border: 1px solid green;
+}
+
+.social-medias-list {
+  border: 1px solid red;
+}
+.social-medias-item {
+  border: 1px solid black;
+}
+.social-medias-item a {
+  border: 1px solid black;
+}
+
+*/
+
+
+
+
+
+
+/* HEADER */
+.header-nav {
+  display: flex;
+  flex-direction: column;
+}
+.header-nav h1{
+  align-self: center;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  padding: 0px;
+
+  font-family: Playfair Display;
+font-style: normal;
+font-weight: 900;
+font-size: 35px;
+letter-spacing: 1px;
+}
+.header-nav-list {
+  display: flex;
+  margin: 46px 135px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header-nav-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  padding-right: 10px;
+}
+.header-nav-list li:last-child {
+  padding-right: 0px;
+}
+.header-nav-list a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* -- Подводный отель -- */
+
+.main-news {
+  min-height: 464px;
+  color: white;
+  background-image: url("img/Mask Group.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-news span {
+  visibility: hidden;
+  height: 25px;
+  padding-top: 5px;
+  width: 117px;
+  margin-left: 135px;
+  background-color: #FF7931;
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+.main-news:hover span {
+  visibility: visible
+}
+.main-news div {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin-top: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FF7931;
+  border: 0px solid #FF7931;
+  border-radius: 50%;
+}
+.main-news img {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 27px;
+  margin: auto;
+}
+.main-news h2 {
+  margin-top: 32px;
+  margin-bottom: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.main-news a:hover {
+  color: #FF7931;
+  text-decoration: none;
+}
+.main-news p {
+  width: 456px;
+  margin-top: 39px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+
+
+/* -- ОБЗОРЫ -- */
+.reviews h2 {
+  margin-top: 44px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+.reviews h3 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 31px;
+}
+.reviews h3:hover {
+  text-decoration: underline;
+}
+.reviews-list li:nth-child(2) h3 {
+  color: #FF7931;
+}
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 51px;
+}
+.reviews-item {
+  width: 370px;
+  margin-left: 15px;
+  margin-right: 14px;
+}
+
+/* -- АБОНЕМЕНТЫ В ТЕАТР -- */
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(circle, white 353px, #F7F7F7 353px);
+}
+.promo h2 {
+  margin-top: 33px;
+  margin-bottom: 11px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+.promo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.promo-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+
+.promo-item h3 {
+font-family: Playfair Display;
+font-style: normal;
+font-weight: 900;
+font-size: 23px;
+line-height: 31px;
+/* identical to box height */
+text-align: center;
+
+margin-top: 24px;
+margin-bottom: 10px;
+}
+.promo-item hr {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.promo-item p {
+  width: 370px;
+  height: 63px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.promo a {
+  position: relative;
+  background-color: #FF7931;
+  color: white;
+  vertical-align: bottom;
+  margin-top: 25px;
+  margin-bottom: 36px;
+  padding: 17px 60px 15px 30px;
+
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+.promo a img {
+  position: absolute;
+  top: 15px;
+  right: 33px;
+}
+.promo a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.main-footer {
+  color: white;
+  background-color: #575757;
+  margin-top: 50px;
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.footer-nav h2 {
+  align-self: center;
+  margin-top: 26px;
+  margin-bottom: 0px;
+  padding: 0px;
+  font-family: Playfair Display;
+font-style: normal;
+font-weight: 900;
+font-size: 28px;
+line-height: 37px;
+letter-spacing: 1px;
+}
+
+.footer-nav-list a:hover {
+  text-decoration: underline;
+}
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 32px 135px 0px;
+  padding-bottom: 46px;
+  border-bottom: 1px solid rgba(255,255,255, 0.4);
+}
+.footer-nav-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  padding-right: 10px;
+}
+.footer-nav-list li:last-child {
+  padding-right: 0px;
+}
+
+
+.social-medias-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.social-medias-item {
+  margin: 42px 7px 46px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.social-medias-item a {
+  height: 47px;
+  width: 47px;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
