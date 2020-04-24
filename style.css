@@ -451,3 +451,26 @@ letter-spacing: 1px;
   justify-content: center;
   align-content: center;
 }
+
+
+
+
+///////////////////////////
+.main-news:hover span {
+  visibility: visible
+  transition: all 0.1s linear;
+}
+.footer-nav-item:hover {
+color: #FF7931;
+transition: all 0.1s linear;
+}
+
+.social-medias-item a:hover {
+  background-color: #FF7931;
+  transform: scale(1.1);
+  transition: all 0.1s linear;
+}
+.reviews-item img:hover {
+  opacity: 0.85;
+  transition: all 0.1s linear;
+}
