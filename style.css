@@ -151,7 +151,7 @@ letter-spacing: 1px;
   justify-content: space-between;
 }
 .header-nav-item {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -162,8 +162,9 @@ letter-spacing: 1px;
 .header-nav-list li:last-child {
   padding-right: 0px;
 }
-.header-nav-list a:hover {
-  text-decoration: underline;
+.header-nav-item:hover {
+  color: #FF7931;
+  transition: all 0.1s linear;
 }
 
 
@@ -190,7 +191,7 @@ letter-spacing: 1px;
   width: 117px;
   margin-left: 135px;
   background-color: #FF7931;
-font-family: Raleway;
+font-family: Raleway, sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
@@ -200,7 +201,8 @@ letter-spacing: 2px;
 text-transform: uppercase;
 }
 .main-news:hover span {
-  visibility: visible
+  visibility: visible;
+  transition: all 0.1s linear;
 }
 .main-news div {
   position: relative;
@@ -225,7 +227,7 @@ text-transform: uppercase;
 .main-news h2 {
   margin-top: 32px;
   margin-bottom: 100px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
@@ -237,6 +239,7 @@ text-transform: uppercase;
 .main-news a:hover {
   color: #FF7931;
   text-decoration: none;
+  transition: all 0.1s linear;
 }
 .main-news p {
   width: 456px;
@@ -245,7 +248,7 @@ text-transform: uppercase;
   margin-right: auto;
   margin-bottom: 48px;
   text-align: center;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -259,7 +262,7 @@ text-transform: uppercase;
   margin-top: 44px;
   margin-bottom: 20px;
   text-align: center;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -303,7 +306,7 @@ text-transform: uppercase;
   margin-top: 33px;
   margin-bottom: 11px;
 
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -363,7 +366,7 @@ margin-bottom: 10px;
   margin-bottom: 36px;
   padding: 17px 60px 15px 30px;
 
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
@@ -377,7 +380,8 @@ text-transform: uppercase;
   right: 33px;
 }
 .promo a:hover {
-  text-decoration: underline;
+  opacity: 0.85;
+  transition: all 0.1s linear;
 }
 
 /* FOOTER */
@@ -404,8 +408,7 @@ line-height: 37px;
 letter-spacing: 1px;
 }
 
-.footer-nav-list a:hover {
-  text-decoration: underline;
+
 }
 .footer-nav-list {
   display: flex;
@@ -416,7 +419,7 @@ letter-spacing: 1px;
   border-bottom: 1px solid rgba(255,255,255, 0.4);
 }
 .footer-nav-item {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
