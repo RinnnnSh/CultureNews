@@ -277,10 +277,9 @@ text-transform: uppercase;
   line-height: 31px;
 }
 .reviews h3:hover {
-  text-decoration: underline;
-}
-.reviews-list li:nth-child(2) h3 {
+  text-decoration: none;
   color: #FF7931;
+  transition: all 0.1s linear;
 }
 .reviews-list {
   display: flex;
