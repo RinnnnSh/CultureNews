@@ -408,7 +408,10 @@ line-height: 37px;
 letter-spacing: 1px;
 }
 
+.footer-nav-list a:hover {
+  text-decoration: none;
 
+}
 
 .footer-nav-list {
   display: flex;
