@@ -1,95 +1,177 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 680px;
+  font-family: "Roboto", sans-serif;
   color: black;
   background-color: white;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
 }
-/* @font-face {
+@font-face {
   font-family: Playfair Display;
   src: url(fonts/PlayfairDisplay-Black.ttf);
 }
 @font-face {
   font-family: Raleway;
   src: url(fonts/Raleway-Regular.ttf);
-} */
-
-@font-face {
-  font-family: 'Playfair Display', serif;
-  font-family: 'Raleway', sans-serif;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
 
-a {
-  text-decoration: none;
-  color: inherit;
+li {
+  list-style-type: none;
 }
 ul {
  padding: 0;
  margin-left: 0px;
- list-style: none;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+hr {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+
+/* ---------------- вспомогательные рамки -----------------
+.header-nav {
+  border: 1px solid gray;
+}
+.header-nav h1 {
+  border: 1px solid black;
+}
+.header-nav-list {
+  border: 1px solid black;
+}
+.header-nav-item {
+  border: 1px solid red;
+}
+.main-news {
+  border: 1px solid red;
+}
+.main-news div {
+  border: 1px solid white;
+}
+.main-news img {
+  border: 1px solid red;
+}
+.main-news h2 {
+border: 1px solid white;
+}
+.main-news p {
+border: 1px solid white;
+}
+.reviews h2 {
+  border: 1px solid blue;
+}
+.reviews-list {
+  border: 1px solid black;
+}
+.reviews-item {
+  border: 1px solid blue;
+}
+.promo {
+  border: 1px solid red;
+}
+.promo h2 {
+  border: 1px solid blue;
+}
+.promo-item h3 {
+border: 1px solid green;
+}
+.promo-item p {
+  border: 1px solid black;
+}
+.promo a {
+  border: 1px solid black;
+}
+footer {
+  border: 1px solid blue;
+}
+.footer-nav {
+  border: 1px solid gray;
+}
+.footer-nav h2 {
+  border: 1px solid black;
+}
+.footer-nav-list {
+  border: 1px solid black;
+}
+.footer-nav-item {
+  border: 1px solid green;
+}
+
+.social-medias-list {
+  border: 1px solid red;
+}
+.social-medias-item {
+  border: 1px solid black;
+}
+.social-medias-item a {
+  border: 1px solid black;
+}
+
+*/
+
+
+
 
 
 
 /* HEADER */
-.main-header-title {
-  text-align: center;
+.header-nav {
+  display: flex;
+  flex-direction: column;
+}
+.header-nav h1{
+  align-self: center;
   margin-top: 60px;
-  margin-bottom: 45px;
+  margin-bottom: 0px;
+  padding: 0px;
 
   font-family: Playfair Display;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 35px;
+font-style: normal;
+font-weight: 900;
+font-size: 35px;
+letter-spacing: 1px;
 }
-
 .header-nav-list {
   display: flex;
+  margin: 46px 135px;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  padding: 0;
-  margin-left: 0px;
-  list-style: none;
-
-  margin: 45px 15%;
 }
-
 .header-nav-item {
-  margin-right: 10px;
-
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
-  line-height: 22px;
+  line-height: 18px;
   letter-spacing: 2px;
+  padding-right: 10px;
 }
-.header-nav-list .header-nav-item:last-child {
+.header-nav-list li:last-child {
   padding-right: 0px;
 }
-.header-nav-list a:hover {
+.header-nav-item:hover {
   color: #FF7931;
+  transition: all 0.1s linear;
 }
 
 
 
 /* -- Подводный отель -- */
+
 .main-news {
-  position: relative;
   min-height: 464px;
   color: white;
   background-image: url("img/Mask Group.jpg");
@@ -97,12 +179,55 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
 
-  border: 0.01px solid #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
-.main-news-title {
-  margin-top: 133px;
+.main-news span {
+  visibility: hidden;
+  height: 25px;
+  padding-top: 5px;
+  width: 117px;
+  margin-left: 135px;
+  background-color: #FF7931;
+font-family: Raleway, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+.main-news:hover span {
+  visibility: visible;
+  transition: all 0.1s linear;
+}
+.main-news div {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin-top: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FF7931;
+  border: 0px solid #FF7931;
+  border-radius: 50%;
+}
+.main-news img {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 27px;
+  margin: auto;
+}
+.main-news h2 {
+  margin-top: 32px;
   margin-bottom: 100px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
@@ -111,33 +236,19 @@ ul {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-.main-news-title::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 46px;
-  width: 55px;
-  height: 55px;
-
-  border-radius: 50%;
-  background: #FF7931 url("img/gallery_ico 1.svg") no-repeat center center;
-}
-.main-news-title a:hover {
+.main-news a:hover {
   color: #FF7931;
   text-decoration: none;
+  transition: all 0.1s linear;
 }
-.main-news-description {
-  position: absolute;
-  max-width: 460px;
+.main-news p {
+  width: 456px;
+  margin-top: 39px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
   text-align: center;
-  /* margin-top: 39px; */
-  top: 330px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -146,86 +257,55 @@ ul {
 
 
 
-
 /* -- ОБЗОРЫ -- */
-.reviews-title {
+.reviews h2 {
   margin-top: 44px;
   margin-bottom: 20px;
   text-align: center;
-
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   letter-spacing: 2px;
 }
-.reviews-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: -20px;
-  margin-bottom: 50px;
-}
-
-.reviews-item {
-  display: flex;
-  flex-direction: column;
-
-  width: 370px;
-  margin-left: 15px;
-  margin-right: 14px;
-  margin-top: 20px;
-}
-
-.reviews-item-title {
-  margin: 0;
-  margin-top: 20px;
-
+.reviews h3 {
   font-family: Playfair Display;
   font-style: normal;
   font-weight: 900;
   font-size: 23px;
   line-height: 31px;
 }
-.reviews-item:hover .reviews-item-title {
+.reviews h3:hover {
+  text-decoration: none;
   color: #FF7931;
   transition: all 0.1s linear;
 }
-.reviews-item:hover .reviews-item-img {
-  opacity: 0.85;
-  transition: all 0.1s linear;
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 51px;
 }
-.reviews-item-img {
-  order: -1;
+.reviews-item {
+  width: 370px;
+  margin-left: 15px;
+  margin-right: 14px;
 }
-.reviews-item p {
-  margin: 0;
-  margin-top: 10px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
-}
-
-
-
 
 /* -- АБОНЕМЕНТЫ В ТЕАТР -- */
 .promo {
-  position: relative;
-  min-height: 556px;
-  border: 0.01px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: radial-gradient(circle, white 353px, #F7F7F7 353px);
 }
-.promo-title {
-  margin: 0;
-  margin-top: 30px;
-  text-align: center;
+.promo h2 {
+  margin-top: 33px;
+  margin-bottom: 11px;
 
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -238,87 +318,70 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-
-  margin-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.promo-term {
-  margin: 24px auto 9px;
+.promo-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
 
-  text-align: center;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 23px;
-  line-height: 31px;
+.promo-item h3 {
+font-family: Playfair Display;
+font-style: normal;
+font-weight: 900;
+font-size: 23px;
+line-height: 31px;
+/* identical to box height */
+text-align: center;
+
+margin-top: 24px;
+margin-bottom: 10px;
 }
-
-.promo-description {
-  position: relative;
+.promo-item hr {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.promo-item p {
   width: 370px;
-  min-height: 67px;
+  height: 63px;
   text-align: center;
-  margin: 0px auto;
-}
-.promo-description:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  width: 100px;
-  height: 1px;
-  background-color: rgba(100, 100, 100, 0.2);;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .promo a {
-  position: absolute;
+  position: relative;
   background-color: #FF7931;
   color: white;
   vertical-align: bottom;
-  bottom: 39px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 25px;
+  margin-bottom: 36px;
   padding: 17px 60px 15px 30px;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 2px;
+text-transform: uppercase;
 }
-.promo a::after {
-  content: "";
+.promo a img {
   position: absolute;
-  width: 8px;
-  height: 8px;
-  border-top: 2px solid white;
-  border-right: 2px solid white;
-  transform:  translate(18px, 1px) rotate(45deg);
-}
-.promo a::before {
-  content: "";
-  position: absolute;
-  top: 22px;
-  right: 32px;
-  width: 14px;
-  height: 2px;
-  background-color: white;
+  top: 15px;
+  right: 33px;
 }
 .promo a:hover {
-  text-decoration: underline;
-}
-.promo a:hover::after {
-  transform:   translate(28px, 1px) rotate(45deg);
+  opacity: 0.85;
   transition: all 0.1s linear;
 }
-.promo a:hover::before {
-  transform: translateX(10px);
-  transition: all 0.1s linear;
-}
-
 
 /* FOOTER */
 .main-footer {
@@ -326,47 +389,48 @@ ul {
   background-color: #575757;
   margin-top: 50px;
 }
-
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 .footer-nav h2 {
-  padding-top: 25px;
-  text-align: center;
+  align-self: center;
+  margin-top: 26px;
+  margin-bottom: 0px;
+  padding: 0px;
   font-family: Playfair Display;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 28px;
-  line-height: 37px;
-  letter-spacing: 1px;
+font-style: normal;
+font-weight: 900;
+font-size: 28px;
+line-height: 37px;
+letter-spacing: 1px;
+}
+
+.footer-nav-list a:hover {
+  text-decoration: none;
+
 }
 
 .footer-nav-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  padding: 0;
-  margin-left: 0px;
-  list-style: none;
-
-  margin: 35px 15% 0;
-  padding-bottom: 35px;
-
+  margin: 32px 135px 0px;
+  padding-bottom: 46px;
   border-bottom: 1px solid rgba(255,255,255, 0.4);
 }
 .footer-nav-item {
-  margin-right: 10px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
-  line-height: 22px;
+  line-height: 18px;
   letter-spacing: 2px;
+  padding-right: 10px;
 }
-.footer-nav-item:hover {
-color: #FF7931;
-transition: all 0.1s linear;
-}
-.footer-nav-item:last-child {
-  margin-right: 0px;
+.footer-nav-list li:last-child {
+  padding-right: 0px;
 }
 
 
@@ -378,37 +442,40 @@ transition: all 0.1s linear;
   margin-top: 0px;
 }
 .social-medias-item {
-  margin: 42px 7px;
+  margin: 42px 7px 46px;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 .social-medias-item a {
-  display: block;
   height: 47px;
   width: 47px;
-
-  text-indent: -9999px;
-  white-space: nowrap;
-
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: white;
 
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.social-medias-item-vk a {
-  background-image: url("img/icons_2.svg");
+
+
+
+///////////////////////////
+.main-news:hover span {
+  visibility: visible
+  transition: all 0.1s linear;
 }
-.social-medias-item-fb a {
-  background-image: url("img/facebook_icon.svg");
-}
-.social-medias-item-tw a {
-  background-image: url("img/twitter_icon.svg");
+.footer-nav-item:hover {
+color: #FF7931;
+transition: all 0.1s linear;
 }
 
 .social-medias-item a:hover {
   background-color: #FF7931;
   transform: scale(1.1);
+  transition: all 0.1s linear;
+}
+.reviews-item img:hover {
+  opacity: 0.85;
   transition: all 0.1s linear;
 }
