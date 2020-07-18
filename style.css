@@ -96,7 +96,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
 
-  border: 0.01px solid #fff;
+  /* border: 0.01px solid #fff; */
 }
 .main-news-title {
   margin: 133px 10px 0;
