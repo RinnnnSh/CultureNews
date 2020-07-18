@@ -10,14 +10,7 @@ body {
   font-size: 14px;
   line-height: 150%;
 }
-/* @font-face {
-  font-family: Playfair Display;
-  src: url(fonts/PlayfairDisplay-Black.ttf);
-}
-@font-face {
-  font-family: Raleway;
-  src: url(fonts/Raleway-Regular.ttf);
-} */
+
 
 @font-face {
   font-family: 'Playfair Display', serif;
