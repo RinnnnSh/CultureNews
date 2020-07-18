@@ -2,13 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости культуры</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <nav class="header-nav">
-        <h1><a href="#">Новости культуры</a></h1>
+      <nav class="main-header-nav">
+        <h2 class="main-header-title"><a>Новости культуры</a></h2>
         <ul class="header-nav-list">
           <li class="header-nav-item">
             <a href="#">НОВОСТИ</a>
@@ -41,74 +43,63 @@
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Новости культуры</h1>
       <section class="main-news">
-        <span>НОВОE</span>
-        <div><img src="img/gallery_ico 1.svg"></div>
-        <h2><a href="#">Подводный отель</a></h2>
-        <p>Как известно, Дубай – город контрастов.
+        <h2 class="main-news-title"><a href="#">Подводный отель</a></h2>
+        <p class="main-news-description">Как известно, Дубай – город контрастов.
           Самые революционные и фантастические мечты
           архитекторов способен воплотить в жизнь этот
           мегаполис, построенный на нефти и за счет нефти
         </p>
-      <!--  <img src="img/Mask Group.jpg" alt="Подводный отель">  -->
       </section>
       <section class="reviews">
-        <h2>ОБЗОРЫ</h2>
+        <h2 class="reviews-title">ОБЗОРЫ</h2>
         <ul class="reviews-list">
-          <li class="reviews-item">
-           <a href="#"><img src="img/review_1.jpg" alt="«Шальные годы» Монпарнаса">
-            <h3>«Шальные годы» Монпарнаса</h3></a>
-            <p>В Музее изобразительных искусств имени Пушкина с 29
-              сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»
-            </p>
-          </li>
-          <li class="reviews-item">
-            <a href="#"><img src="img/review_2.png" alt="Анатомия за 30 секунд">
-            <h3>Анатомия за 30 секунд</h3></a>
-            <p>Сейчас, когда мир открыт нараспашку для человека
-              и его познавательных изысканий, интерес
-              к научно‑популярной литературе заметно вырос
-            </p>
-          </li>
-          <li class="reviews-item">
-            <a href="#"><img src="img/review_3.jpg" alt="Сферические чудаки">
-            <h3>Сферические чудаки</h3></a>
-            <p>Корреспондентам «Культурного обозревателя» посчастливилось
-              побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»
-            </p>
-          </li>
+          <a href="#">
+            <li class="reviews-item">
+              <h3 class="reviews-item-title">«Шальные годы» Монпарнаса</h3>
+              <img class="reviews-item-img" src="img/review_1.jpg" width="" height="" alt="«Шальные годы» Монпарнаса">
+              <p>В Музее изобразительных искусств имени Пушкина с 29
+              сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="reviews-item">
+              <h3 class="reviews-item-title">Анатомия за 30 секунд</h3>
+              <img class="reviews-item-img" src="img/review_2.png" width="" height="" alt="Анатомия за 30 секунд">
+              <p>Сейчас, когда мир открыт нараспашку для человека
+                и его познавательных изысканий, интерес
+                к научно‑популярной литературе заметно вырос</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="reviews-item">
+              <h3 class="reviews-item-title">Сферические чудаки</h3>
+              <img class="reviews-item-img" src="img/review_3.jpg" alt="Сферические чудаки">
+              <p>Корреспондентам «Культурного обозревателя» посчастливилось
+                побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»</p>
+            </li>
+          </a>
         </ul>
       </section>
       <section class="promo">
-        <h2>АБОНЕМЕНТЫ В ТЕАТР</h2>
-        <ul class="promo-list">
-          <li class="promo-item">
-            <h3>Скидка 50% на весь сезон 2020</h3>
-            <p>Покупая абонемент на сезон 2020 года вы
-              сэкономите половину стоимости всех спектаклей
-            </p>
-            <hr width=100px align="center" size=1px color="#F7F7F7">
-          </li>
-          <li class="promo-item">
-            <h3>Места у сцены</h3>
-            <p>Только для обладателей абонементов будет
-               возможность сесть поближе к сцене
-            </p>
-            <hr width=100px align="center" size=1px color="#F7F7F7">
-          </li>
-          <li class="promo-item">
-            <h3>Автограф-сессия актёров</h3>
-            <p>После спектаклей у вас будет возможность пообщаться
-              с актёрами и взять у них автограф
-            </p>
-          </li>
-        </ul>
-        <a href="#">смотреть<img src="img/shape.svg"></a>
+        <h2 class="promo-title">АБОНЕМЕНТЫ В ТЕАТР</h2>
+        <dl class="promo-list">
+          <dt class="promo-term">Скидка 50% на весь сезон 2020</dt>
+          <dd class="promo-description">Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости всех спектаклей</dd>
+
+          <dt class="promo-term">Места у сцены</dt>
+          <dd class="promo-description">Только для обладателей абонементов будет возможность сесть поближе к сцене</dd>
+
+          <dt class="promo-term">Автограф-сессия актёров</dt>
+          <dd class="promo-description">После спектаклей у вас будет возможность пообщаться с актёрами и взять у них автограф</dd>
+        </dl>
+        <a href="#">смотреть</a>
       </section>
     </main>
     <footer class="main-footer">
       <nav class="footer-nav">
-        <h2><a href="#">Новости культуры</a></h2>
+        <h2><a >Новости культуры</a></h2>
         <ul class="footer-nav-list">
           <li class="footer-nav-item"><a href="#">НОВОСТИ</a></li>
           <li class="footer-nav-item"><a href="#">ОБЗОРЫ</a></li>
@@ -122,14 +113,14 @@
         </ul>
 
         <ul class="social-medias-list">
-          <li class="social-medias-item">
-            <a href="#"><img src="img/icons_2.svg" alt="inst"></a>
+          <li class="social-medias-item social-medias-item-vk">
+            <a href="#">Мы Вконтакте</a>
           </li>
-          <li class="social-medias-item">
-            <a href="#"><img src="img/facebook_icon.svg" alt="facebook"></a>
+          <li class="social-medias-item social-medias-item-fb">
+            <a href="#">Мы в facebook</a>
           </li>
-          <li class="social-medias-item">
-            <a href="#"><img src="img/twitter_icon.svg" alt="twitter"></a>
+          <li class="social-medias-item social-medias-item-tw">
+            <a href="#">Мы в twitter</a>
           </li>
         </ul>
       </nav>
